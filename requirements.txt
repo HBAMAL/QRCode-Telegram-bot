@@ -4,7 +4,7 @@ telegraph
 pyqrcode 
 pypng
 colorama
-Pillow
+
 pypng
 pyzbar==0.1.8
 Pillow==8.1.1

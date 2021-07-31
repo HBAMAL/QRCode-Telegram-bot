@@ -8,7 +8,6 @@ import os
 from pyrogram import Client, filters
 from telegraph import upload_file
 import pyqrcode
-from messages import Msg
 from bot.plugins.display.display_progress import progress
 
 

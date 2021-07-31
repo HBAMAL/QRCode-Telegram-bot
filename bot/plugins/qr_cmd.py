@@ -3,6 +3,25 @@ from messages import Msg
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
+START_TEXT = """
+Hello {}, I am a google translator telegram bot.
+Made by @FayasNoushad
+"""
+HELP_TEXT = """
+- Just send a text with language code
+example :- `This is a sample text | ml`
+Made by @FayasNoushad
+"""
+ABOUT_TEXT = """
+- **Bot :** `Translator Bot`
+- **Creator :** [Fayas](https://telegram.me/TheFayas)
+- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
+- **Source :** [Click here](https://github.com/FayasNoushad/Translator-Bot)
+- **Language :** [Python3](https://python.org)
+- **Library :** [Pyrogram](https://pyrogram.org)
+- **Server :** [Heroku](https://heroku.com)
+"""
+
 START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Help', callback_data='help'),

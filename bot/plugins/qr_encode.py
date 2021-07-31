@@ -44,7 +44,6 @@ async def qr_encode(client, message):
     try:
         await update.reply_text(
             text=info,
-            reply_markup=reply_markup,
             reply_markup=InlineKeyboardMarkup(
                    [[
                     InlineKeyboardButton('📢 Channel', url='https://telegram.me/TELSABOTS'),

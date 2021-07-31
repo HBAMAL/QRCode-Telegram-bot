@@ -32,19 +32,15 @@ HELP_BUTTONS = InlineKeyboardMarkup(
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        InlineKeyboardButton('Channel', url='https://telegram.me/telsaBOTS'),
+        InlineKeyboardButton('DEV', url='https://telegram.me/ALLUADDICT')
         ],[
         InlineKeyboardButton('Home', callback_data='home'),
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('Close', callback_data='close')
         ]]
     )
-CLOSE_BUTTON = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('Close', callback_data='close')
-        ]]
-    )
+
 
 @Client.on_callback_query()
 async def cb_data(bot, update):
@@ -79,10 +75,3 @@ async def start(bot, update):
         reply_markup=reply_markup
     )     
 
-@Client.on_message(filters.command(["help", "h"]))
-async def help_message(client, message):
-    await client.send_message(  
-        chat_id=message.chat.id,
-        text=f"Hey {message.from_user.first_name},{Msg.help}{Msg.source}",
-        reply_to_message_id=message.message_id,
-    )

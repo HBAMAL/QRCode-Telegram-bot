@@ -3,16 +3,17 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 START_TEXT = """
-<b>Hello {}, I am a Qr Code Generator bot.
-Made by<b> @TELSABOTS
+<b>HI {}, I AM A QR CODE GENERATOR BOT<b>
+
+<i>MADE BY<i> @TELSABOTS 
 """
 HELP_TEXT = """
-NO HRLP
+NO HELP HERE
 """
 ABOUT_TEXT = """
 - **Bot :** `QR CODE BOT`
 - **Creator :** [HB](https://telegram.me/ALLUADDICT)
-- **Channel :** [Fayas Noushad](https://telegram.me/TELSABOTS)
+- **Channel :** [TELSABOTS](https://telegram.me/TELSABOTS)
 """
 
 START_BUTTONS = InlineKeyboardMarkup(

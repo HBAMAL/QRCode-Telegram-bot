@@ -43,12 +43,8 @@ async def qr_encode(client, message):
         print(error)
     reply_markup=InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Wikipedia', url=f'{country.wiki()}'),
-        InlineKeyboardButton('Google', url=f'https://www.google.com/search?q={country_name}')
-        ],[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
-
+        InlineKeyboardButton('Channel', url='https://telegram.me/TELSABOTS'),
+        InlineKeyboardButton('DEV', url='https://telegram.me/ALLUADDICT')
         ]]
     )
     try:

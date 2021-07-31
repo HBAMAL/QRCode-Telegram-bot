@@ -3,12 +3,9 @@ TgCrypto
 telegraph
 pyqrcode 
 pypng
-
-Pillow
-
-pyqrcode
-
 colorama
 Pillow
 pypng
-pyzbar
+pyzbar==0.1.8
+Pillow==8.1.1
+python-telegram-bot==11.1.0

@@ -38,7 +38,7 @@ async def qr_encode(client, message):
                 qr
             )
         )
-    reply_markup=InlineKeyboardMarkup(
+   reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Wikipedia', url=f'{country.wiki()}'),
         InlineKeyboardButton('Google', url=f'https://www.google.com/search?q={country_name}')

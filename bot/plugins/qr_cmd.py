@@ -4,22 +4,16 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 START_TEXT = """
-Hello {}, I am a google translator telegram bot.
-Made by @FayasNoushad
+<b>Hello {}, I am a Qr Code Generator bot.
+Made by<b> @TELSABOTS
 """
 HELP_TEXT = """
-- Just send a text with language code
-example :- `This is a sample text | ml`
-Made by @FayasNoushad
+NO HRLP
 """
 ABOUT_TEXT = """
-- **Bot :** `Translator Bot`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Translator-Bot)
-- **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram](https://pyrogram.org)
-- **Server :** [Heroku](https://heroku.com)
+- **Bot :** `QR CODE BOT`
+- **Creator :** [HB](https://telegram.me/ALLUADDICT)
+- **Channel :** [Fayas Noushad](https://telegram.me/TELSABOTS)
 """
 
 START_BUTTONS = InlineKeyboardMarkup(

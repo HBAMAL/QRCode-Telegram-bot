@@ -42,8 +42,6 @@ async def qr_encode(client, message):
     except Exception as error:
         print(error)
 
-    await qr.edit_text(f"https://telegra.ph{response[0]}")
-    
     reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Wikipedia', url=f'{country.wiki()}'),
@@ -54,6 +52,9 @@ async def qr_encode(client, message):
 
         ]]
     )
+
+    await qr.edit_text(f"https://telegra.ph{response[0]}")
+  
 
     try:
         os.remove(img)

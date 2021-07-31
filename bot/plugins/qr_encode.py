@@ -43,6 +43,7 @@ async def qr_encode(client, message):
         print(error)
 
     await qr.edit_text(f"https://telegra.ph{response[0]}")
+    
     reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Wikipedia', url=f'{country.wiki()}'),

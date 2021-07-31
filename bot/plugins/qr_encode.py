@@ -57,8 +57,5 @@ async def qr_encode(client, message):
             reply_markup=reply_markup,
             disable_web_page_preview=True
         )
-
-    try:
-        os.remove(img)
     except Exception as error:
         print('Something is {error}')

@@ -41,7 +41,6 @@ async def qr_encode(client, message):
 
     except Exception as error:
         print(error)
-
     reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Wikipedia', url=f'{country.wiki()}'),
@@ -52,7 +51,12 @@ async def qr_encode(client, message):
 
         ]]
     )
-
+    try:
+        await update.reply_text(
+            text=info,
+            reply_markup=reply_markup,
+            disable_web_page_preview=True
+        )
     await qr.edit_text(f"https://telegra.ph{response[0]}")
   
 

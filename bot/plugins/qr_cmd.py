@@ -74,4 +74,11 @@ async def start(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )     
-
+@Client.on_message(filters.command(["help", "h"]))
+async def help_message(bot, update):
+    text = HELP_TEXT
+    reply_markup = HELP_BUTTONS
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup

@@ -57,8 +57,6 @@ async def qr_encode(client, message):
             reply_markup=reply_markup,
             disable_web_page_preview=True
         )
-    await qr.edit_text(f"https://telegra.ph{response[0]}")
-  
 
     try:
         os.remove(img)

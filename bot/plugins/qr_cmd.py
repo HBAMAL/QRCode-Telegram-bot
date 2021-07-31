@@ -82,3 +82,4 @@ async def help_message(bot, update):
         text=text,
         disable_web_page_preview=True,
         reply_markup=reply_markup
+    )     

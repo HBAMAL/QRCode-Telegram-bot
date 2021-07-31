@@ -43,6 +43,16 @@ async def qr_encode(client, message):
         print(error)
 
     await qr.edit_text(f"https://telegra.ph{response[0]}")
+    reply_markup=InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Wikipedia', url=f'{country.wiki()}'),
+        InlineKeyboardButton('Google', url=f'https://www.google.com/search?q={country_name}')
+        ],[
+        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+
+        ]]
+    )
 
     try:
         os.remove(img)

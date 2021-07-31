@@ -16,7 +16,7 @@ from bot.plugins.display.display_progress import progress
 async def qr_encode(client, message):
     qr = await client.send_message(
         chat_id=message.chat.id,
-        text="Making your QR Code... 😁",
+        text="**Making your QR Code... 😁**",
         reply_to_message_id=message.message_id
     )
     s = str(message.text)
@@ -34,23 +34,21 @@ async def qr_encode(client, message):
             photo=img,
             progress=progress,
             progress_args=(
-                "Trying to Uploading....",
+                "**Trying to Uploading....**",
                 qr
             )
         )
 
     except Exception as error:
         print(error)
-    reply_markup=InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('DEV', url='https://telegram.me/ALLUADDICT')
-        ]]
-    )
     try:
         await update.reply_text(
             text=info,
-            reply_markup=reply_markup,
+            reply_markup=InlineKeyboardMarkup(
+                   [[
+                    InlineKeyboardButton('📢 Channel', url='https://telegram.me/TELSABOTS'),
+                    InlineKeyboardButton('😎 DEV', url='https://telegram.me/ALLUADDICT')
+                   ]]), 
             disable_web_page_preview=True
         )
     except Exception as error:

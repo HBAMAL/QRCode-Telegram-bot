@@ -3,6 +3,13 @@ TgCrypto
 telegraph
 pyqrcode 
 pypng
-pyzbar>=0.1.4
 
 Pillow
+
+pyqrcode
+
+colorama
+Pillow
+pypng
+zbar
+pyzbar

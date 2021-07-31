@@ -52,7 +52,7 @@ CLOSE_BUTTON = InlineKeyboardMarkup(
         ]]
     )
 
-@FayasNoushad.on_callback_query()
+@Client.on_callback_query()
 async def cb_data(bot, update):
     if update.data == "home":
         await update.message.edit_text(

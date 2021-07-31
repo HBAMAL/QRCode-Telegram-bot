@@ -38,9 +38,6 @@ async def qr_encode(client, message):
                 qr
             )
         )
-
-    except Exception as error:
-        print(error)
     reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Wikipedia', url=f'{country.wiki()}'),
@@ -58,4 +55,4 @@ async def qr_encode(client, message):
             disable_web_page_preview=True
         )
     except Exception as error:
-        print('Something is {error}')
+        print(error)

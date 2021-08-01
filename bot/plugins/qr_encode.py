@@ -13,18 +13,9 @@ from bot.plugins.display.display_progress import progress
 
 @Client.on_message(filters.text & filters.private)
 async def qr_encode(client, message):
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text="Select YOUR DESIERED OPTION"
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="📝 RENAME 📝", callback_data="rename_button")],
-                                                [InlineKeyboardButton(text="🗑 CANCEL 🗑", callback_data="cancel_e")]]),
-        parse_mode="html",
-        reply_to_message_id=update.message_id,
-        disable_web_page_preview=True   
-    )   
     qr = await client.send_message(
         chat_id=message.chat.id,
-        text="**Making your QR Code... 😁**",
+        text="Making your QR Code... 😁",
         reply_to_message_id=message.message_id
     )
     s = str(message.text)

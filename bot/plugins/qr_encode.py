@@ -41,7 +41,7 @@ async def qr_encode(client, message):
     except Exception as error:
         print(error)
     try:
-        await qr.reply_text(
+        await qr.edit_text(
             text=text,
             reply_markup=InlineKeyboardMarkup(
                    [[

@@ -33,7 +33,7 @@ async def qr_encode(client, message):
             photo=img,
             progress=progress,
             progress_args=(
-                "**Trying to Uploading....**",
+                "Trying to Uploading....",
                 qr
             )
         )
@@ -41,7 +41,10 @@ async def qr_encode(client, message):
     except Exception as error:
         print(error)
 
-    await qr.edit_text(f"https://t.me/telsabots")
-           
+    await qr.edit_text(f"https://telegra.ph{response[0]}")
+
+    try:
+        os.remove(img)
     except Exception as error:
-        print(error)
+        print('Something is {error}')
+   

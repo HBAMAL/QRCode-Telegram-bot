@@ -15,7 +15,7 @@ from bot.plugins.display.display_progress import progress
 async def qr_encode(client, message):
     qr = await client.send_message(
         chat_id=message.chat.id,
-        text="Making your QR Code... 😁",
+        text="MAKING YOUR QR CODE...........",
         reply_to_message_id=message.message_id
     )
     s = str(message.text)

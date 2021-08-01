@@ -21,6 +21,7 @@ async def qr_encode(client, message):
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True   
+    )   
     qr = await client.send_message(
         chat_id=message.chat.id,
         text="**Making your QR Code... 😁**",

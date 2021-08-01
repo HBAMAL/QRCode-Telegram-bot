@@ -35,13 +35,7 @@ async def qr_encode(client, message):
             progress_args=(
                 "**Trying to Uploading....**",
                 qr
-            )
-        )
-
-    except Exception as error:
-        print(error)
-    try:
-        reply_markup=InlineKeyboardMarkup(
+           reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)

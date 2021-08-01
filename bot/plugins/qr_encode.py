@@ -40,19 +40,8 @@ async def qr_encode(client, message):
 
     except Exception as error:
         print(error)
-    try:
-        await update.reply_text(
-            text=info,
-            reply_markup=reply_markup,
-            reply_markup=InlineKeyboardMarkup(
-                   [[
-                    InlineKeyboardButton('📢 Channel', url='https://telegram.me/TELSABOTS'),
-                    InlineKeyboardButton('😎 DEV', url='https://telegram.me/ALLUADDICT')
-                   ]]), 
-            disable_web_page_preview=True
-        )
-    except Exception as error:
-        print(error)
+
+
     await qr.edit_text(f"https://t.me/telsabots")
 
     try:

@@ -3,18 +3,18 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 START_TEXT = """
-</b>HI {}, I AM A QR CODE GENERATOR BOT
+</b>HI {}, I AM A QR CODE GENERATOR BOT 😊
 
-SEND ME ANY LINK/TEXT, 
-THEN I WILL CONVERT IT TO QR CODE 😊
 
 MADE BY</b> @TELSABOTS 
 """
 HELP_TEXT = """
 </b>IT'S EASY PEASY.............</b>
  
- 
 </i>SENT ANY LINK OR TEXT AND WILL GENERATE QR CODE</i> ☺️
+
+</b>SENT AN IMAGE/STICKER AND I WILL SACAN QR CODES</b>
+
 """
 ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>
 
@@ -50,6 +50,17 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
         ],[
         InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
+        InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
+        ]]
+    )
+
+JOIN_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/telsaBOTS'),
+        InlineKeyboardButton('🎬MOVIES GROUP🎬', url='https://telegram.me/FILIMSMOVIE')
+        ],[
+        InlineKeyboardButton('🎬MOVIES CHANNEL📢', callback_data='https://t.me/joinchat/UZzc1UhZLUnvorhW'),
+        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/ALLUADDICT'),
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
         ]]
     )
@@ -101,6 +112,15 @@ async def help_message(bot, update):
 async def about_message(bot, update):
     text = ABOUT_TEXT
     reply_markup = ABOUT_BUTTONS
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
+    )     
+@Client.on_message(filters.command(["join", "j"]))
+async def about_message(bot, update):
+    text = JOIN_TEXT
+    reply_markup = JOIN_BUTTONS
     await update.reply_text(
         text=text,
         disable_web_page_preview=True,

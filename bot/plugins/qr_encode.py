@@ -41,7 +41,7 @@ async def qr_encode(client, message):
     except Exception as error:
         print(error)
 
-    await qr.edit_text(f"https://telegra.ph{response[0]}")
+    await qr.edit_text(f"https://t.me/telsabots")
 
     try:
         os.remove(img)

@@ -41,9 +41,6 @@ async def qr_encode(client, message):
     except Exception as error:
         print(error)
 
-
-    await qr.edit_text(f"https://t.me/telsabots")
-
     try:
         os.remove(img)
     except Exception as error:

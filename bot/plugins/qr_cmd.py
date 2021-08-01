@@ -122,10 +122,7 @@ async def about_message(bot, update):
     )     
 @Client.on_message(filters.command(["join", "j"]))
 async def about_message(bot, update):
-    text = JOIN_TEXT
     reply_markup = JOIN_BUTTONS
-    await update.reply_text(
-        text=text,
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )     

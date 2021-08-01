@@ -26,14 +26,14 @@ async def qr_decode(client, message):
             file_name=dl_location + '.png',
             progress=progress,
             progress_args=(
-                "</b>CHECKING....</b>",
+                "</b>CHECKING...</b>",
                 decode_text
             )
         )
     except Exception as error:
         print(error)
     await decode_text.edit(
-        text="</b>DECODING.....</b>"
+        text="</b>DECODING.</b>"
     )
     try:
         qr_text_data = decode(Image.open(im_dowload))

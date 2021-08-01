@@ -22,6 +22,7 @@ ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>
 
 🧑🏼‍💻DEV🧑🏼‍💻  : @ALLUADDICT
 """
+JOIN_TEXT = """</b>❤️JOIN THESE CHANNELS ❤️</b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
@@ -61,8 +62,10 @@ JOIN_BUTTONS = InlineKeyboardMarkup(
         ],[
         InlineKeyboardButton('🎬MOVIES CHANNEL📢', callback_data='https://t.me/joinchat/UZzc1UhZLUnvorhW'),
         InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/ALLUADDICT'),
+        InlineKeyboardButton('🏡HOME🏡', callback_data='home')
+        ],[
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
-        ]]
+        ]] 
     )
 
 

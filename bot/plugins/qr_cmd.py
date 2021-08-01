@@ -4,14 +4,16 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 START_TEXT = """
 <b>HI {}, I AM A QR CODE GENERATOR BOT<b>
-
+SWND ME ANY LINK/TEXT, 
+THEN I WILL CONVERT IT TO QR CODE
 <i>MADE BY<i> @TELSABOTS 
 """
 HELP_TEXT = """
 NO HELP HERE
 """
 ABOUT_TEXT = """
-🤣MY OWNER CAN ONLY SEE THIS🤣
+📢CHANNEL📢 :@TELSABOTS
+🧑🏼‍💻DEV🧑🏼‍💻  : @ALLUADDICT
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
@@ -82,7 +84,7 @@ async def help_message(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )     
-@Client.on_message(filters.command(["about"]))
+@Client.on_message(filters.command(["about", "a"]))
 async def about_message(bot, update):
     text = ABOUT_TEXT
     reply_markup = ABOUT_BUTTONS

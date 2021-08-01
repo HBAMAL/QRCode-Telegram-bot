@@ -5,15 +5,11 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 START_TEXT = """
 </b>HI {}, I AM A QR CODE GENERATOR BOT 😊
 
-
 MADE BY</b> @TELSABOTS 
 """
-HELP_TEXT = """
-</b>IT'S EASY PEASY.............</b>
- 
-</i>SENT ANY LINK OR TEXT AND WILL GENERATE QR CODE</i> ☺️
+HELP_TEXT = """SENT ANY LINK OR TEXT AND WILL GENERATE QR CODE
 
-</b>SENT AN IMAGE/STICKER AND I WILL SACAN QR CODES</b>
+</b>SENT AN IMAGE AND I WILL SACAN QR CODES</b>
 
 """
 ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>

@@ -33,7 +33,7 @@ async def qr_encode(client, message):
             photo=img,
             progress=progress,
             progress_args=(
-                "UPLOADING.........",
+                "DONE.........",
                 qr
             )
         )

@@ -35,6 +35,8 @@ async def qr_encode(client, message):
             progress_args=(
                 "**Trying to Uploading....**",
                 qr
+            )
+        )
            reply_markup=InlineKeyboardMarkup(
                 [
                     [

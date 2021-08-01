@@ -37,17 +37,18 @@ async def qr_encode(client, message):
                 qr
             )
         )
-           reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
-                    ],
-                    [
-                        InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
-                    ]
-                ]
-            ),
-            parse_mode="markdown"
+
+    except Exception as error:
+        print(error)
+    try:
+        await update.reply_text(
+            text=info,
+            reply_markup=InlineKeyboardMarkup(
+                   [[
+                    InlineKeyboardButton('📢 Channel', url='https://telegram.me/TELSABOTS'),
+                    InlineKeyboardButton('😎 DEV', url='https://telegram.me/ALLUADDICT')
+                   ]]), 
+            disable_web_page_preview=True
         )
     except Exception as error:
         print(error)

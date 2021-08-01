@@ -3,15 +3,18 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 START_TEXT = """
-<b>HI {}, I AM A QR CODE GENERATOR BOT<b>
+HI {}, I AM A QR CODE GENERATOR BOT
+
 SEND ME ANY LINK/TEXT, 
 THEN I WILL CONVERT IT TO QR CODE 😊
-<i>MADE BY<i> @TELSABOTS 
+
+MADE BY @TELSABOTS 
 """
 HELP_TEXT = """
 NO HELP HERE
 """
-ABOUT_TEXT = """ ⭕️<b>My Name : Image Editor</b>
+ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>
+
 📢<b>CHANNEL :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS❤️</a>
 
 🧑🏼‍💻DEV🧑🏼‍💻  : @ALLUADDICT
@@ -19,6 +22,9 @@ ABOUT_TEXT = """ ⭕️<b>My Name : Image Editor</b>
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/telsaBOTS'),
+        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/ALLUADDICT')
+        ],[
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
         InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
@@ -26,6 +32,9 @@ START_BUTTONS = InlineKeyboardMarkup(
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/telsaBOTS'),
+        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/ALLUADDICT')
+        ],[
         InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
         InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')

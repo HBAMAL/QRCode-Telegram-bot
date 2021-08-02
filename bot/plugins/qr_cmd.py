@@ -19,7 +19,7 @@ ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>
 🧑🏼‍💻DEV🧑🏼‍💻  : @ALLUADDICT
 """
 JOIN_TEXT = """</b>❤️JOIN THESE CHANNELS ❤️
-❤️SHARE AND SUPPORT❤️</b>"""
+❤️SHARE AND SUPPORT ❤️</b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[

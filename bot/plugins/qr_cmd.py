@@ -17,6 +17,8 @@ ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>
 📢<b>CHANNEL :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS❤️</a>
 
 🧑🏼‍💻DEV🧑🏼‍💻  : @ALLUADDICT
+
+🤩SOURCE🤩 :<a href= 'https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'</a>
 """
 JOIN_TEXT = """</b>❤️JOIN THESE CHANNELS ❤️
 ❤️ SHARE AND SUPPORT ❤️</b>"""
@@ -28,7 +30,7 @@ AND WATCH TOTOURIAL VIDEO IF YOU WANT ANY HELP</b>"""
 START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/telsaBOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/ALLUADDICT')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html')
         ],[
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
         InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),

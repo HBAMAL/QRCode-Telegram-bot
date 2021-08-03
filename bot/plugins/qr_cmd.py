@@ -74,7 +74,7 @@ JOIN_BUTTONS = InlineKeyboardMarkup(
         ],[
         InlineKeyboardButton('🎬MOVIES CHANNEL📢', callback_data='https://t.me/joinchat/UZzc1UhZLUnvorhW'),
         InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/ALLUADDICT'),
-        InlineKeyboardButton('🏡HOME🏡', callback_data='home')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
         ],[
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
         ]] 

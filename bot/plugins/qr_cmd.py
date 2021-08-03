@@ -50,7 +50,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/telsaBOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/ALLUADDICT')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
         ],[
         InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),

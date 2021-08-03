@@ -21,6 +21,10 @@ ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>
 JOIN_TEXT = """</b>❤️JOIN THESE CHANNELS ❤️
 ❤️ SHARE AND SUPPORT ❤️</b>"""
 
+SOURCE_TEXT = """</b>PRESS SOURCE BUTTON FOR SOURCE 
+AND WATCH TOTOURIAL VIDEO IF YOU WANT ANY HELP</b>"""
+
+
 START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/telsaBOTS'),
@@ -48,6 +52,15 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
         ],[
         InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
         InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
+        InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
+        ]]
+    )
+
+SOURCE_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html'),
+        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/embed/nfWjbuQqgJ')
+        ],[
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
         ]]
     )
@@ -122,6 +135,16 @@ async def about_message(bot, update):
 async def join_message(bot, update):
     text = JOIN_TEXT
     reply_markup = JOIN_BUTTONS
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
+    )     
+
+@Client.on_message(filters.command(["Source", "s"]))
+async def Source_message(bot, update):
+    text = SOURCE_TEXT
+    reply_markup = SOURCE_BUTTONS
     await update.reply_text(
         text=text,
         disable_web_page_preview=True,

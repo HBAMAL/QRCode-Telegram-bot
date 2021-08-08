@@ -18,7 +18,7 @@ ABOUT_TEXT = """ 🤖<b>BOT🤖: QR CODE🤖</b>
 
 🧑🏼‍💻DEV🧑🏼‍💻  : @ALLUADDICT
 
-__🤩SOURCE🤩:__ [👉CLICK HERE👈](https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html7)
+__🤩SOURCE🤩:__ [👉CLICK HERE👈](https://hbamal.blogspot.com/2021/08/how-to-make-your-own-qr-code-bot.html)
 
 """
 JOIN_TEXT = """</b>❤️JOIN THESE CHANNELS ❤️
